@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <!--日志输出-->
+        <setting name="logImpl" value="LOG4J"/>
+        <!--下划线驼峰自动转换-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启缓存：默认是开启的-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!--
+            两种方法：第一种可以自定义别名，适用于实体类较少时，第二种只能使用默认别名(实体类首字母小写，也可以通过注解的方式起别名，注解方法在实体类上加注解@Alias("别名"))
+        -->
+        <!--实体类起别名，指定实体类-->
+        <!--<typeAlias type="com.oay.entity.User" alias="user" />-->
+        <!--在没有注解的情况下，会使用 Bean 的首字母小写的非限定类名来作为它的别名-->
+        <package name="com.oay.entity"/>
+    </typeAliases>
+
+    <!--这里在整合在spring下面-->
+    <!--<mappers>
+        <mapper resource="mappers/BookMapper.xml"/>
+    </mappers>-->
+
+</configuration>

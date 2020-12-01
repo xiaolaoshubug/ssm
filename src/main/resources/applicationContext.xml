@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--
+        导入spring配置文件
+        必须导入spring-dao.xml，spring/spring-service.xml，spring/spring-mvc.xml
+    -->
+    <import resource="spring/spring-dao.xml"/>
+    <import resource="spring/spring-service.xml"/>
+    <import resource="spring/spring-mvc.xml"/>
+    <import resource="spring/spring-bean.xml"/>
+
+</beans>
