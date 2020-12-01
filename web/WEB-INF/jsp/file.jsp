@@ -18,6 +18,10 @@
         <input type="file" name="filename" multiple="multiple" value="">
         <input type="submit" value="上传">
     </form>
+
+    <div>
+        <a href="/download">点击下载</a>
+    </div>
 </div>
 </body>
 </html>
