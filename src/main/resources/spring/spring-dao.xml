@@ -11,7 +11,7 @@
             http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- 1.关联数据库文件 -->
-    <context:property-placeholder location="classpath:database.properties"/>
+    <!--<context:property-placeholder location="classpath:database.properties"/>-->
 
     <!-- 2.数据库连接池 -->
     <!--数据库连接池

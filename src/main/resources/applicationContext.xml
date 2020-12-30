@@ -10,6 +10,7 @@
             http://www.springframework.org/schema/aop
             http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <context:property-placeholder location="classpath*:*.properties" />
     <!--
         导入spring配置文件
         必须导入spring-dao.xml，spring/spring-service.xml，spring/spring-mvc.xml

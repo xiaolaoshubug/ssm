@@ -3,6 +3,7 @@ package com.oay.service;
 import com.oay.entity.Books;
 import com.oay.mapper.BookMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
