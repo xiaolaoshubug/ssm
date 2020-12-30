@@ -1,6 +1,7 @@
 package com.oay.mapper;
 
 import com.oay.entity.Books;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  * @Version：v1.0
  * @Date: 2020-11-30
  *********************************************************/
+@Mapper
 public interface BookMapper {
 
     //  增加一本书

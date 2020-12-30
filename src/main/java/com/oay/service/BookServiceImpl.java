@@ -4,6 +4,7 @@ import com.oay.entity.Books;
 import com.oay.mapper.BookMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
  * @Version£ºv1.0
  * @Date: 2020-11-30
  *********************************************************/
-@Component
+@Service
 public class BookServiceImpl implements BookService {
 
     @Autowired
