@@ -36,14 +36,16 @@ public class BookServiceImpl implements BookService {
         return bookMapper.deleteBook(id);
     }
 
-    public int updateBook(Books books) {
+    public Books updateBook(Books books) {
         return bookMapper.updateBook(books);
     }
 
+    @Cacheable(value = "queryBook", keyGenerator = "myKeyGenerator")
     public Books queryBook(int id) {
         return bookMapper.queryBook(id);
     }
 
+    @Cacheable(value = "queryBookAll", keyGenerator = "myKeyGenerator")
     public List<Books> queryBookAll() {
         return bookMapper.queryBookAll();
     }
