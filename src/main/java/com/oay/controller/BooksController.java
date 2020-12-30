@@ -30,7 +30,7 @@ public class BooksController {
     @Qualifier("bookServiceImpl")
     private BookService bookService;
 
-    //  查询所以
+    //  查询所有
     @RequestMapping(value = "/allBooks")
     public String queryBooksAll(Model model) {
         List<Books> books = bookService.queryBookAll();
